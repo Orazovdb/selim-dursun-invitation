@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { weddingData } from "../data/wedding";
 import "./CouplePhoto.css";
 
-const LABEL = "Hormatly myhmanlar! Sizi uly hormat bilen toýymyza çagyrýarys.";
+const LABEL = "Toýa çakylyk";
 
 const letterContainer = {
 	hidden: { opacity: 0 },

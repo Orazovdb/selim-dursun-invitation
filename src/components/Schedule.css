@@ -1,5 +1,5 @@
 .schedule-section {
-	padding: 4rem 1.5rem 4rem;
+	padding: 4rem 1.5rem 1rem;
 	background: var(--color-bg);
 	color: var(--color-text);
 }
@@ -64,14 +64,16 @@
 
 .schedule-event-row {
 	display: grid;
-	grid-template-columns: 3.25rem 3rem 1fr;
+	grid-template-columns: 0.3fr 0.1fr 1fr;
 	gap: 0.875rem;
 	align-items: start;
 	padding: 0.875rem 1.125rem;
 	background: var(--color-bg-card);
 	border: 1px solid var(--color-border);
 	border-radius: 8px;
-	transition: border-color 0.2s, box-shadow 0.2s;
+	transition:
+		border-color 0.2s,
+		box-shadow 0.2s;
 }
 
 .schedule-event-row:hover {

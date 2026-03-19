@@ -128,14 +128,12 @@ export function Contact() {
 				viewport={{ once: true }}
 				transition={{ duration: 0.65, delay: 0.1, ease: "easeOut" }}
 			>
-				<p className="contact-closing">Sizi gözlemekde!</p>
+				<p className="contact-closing">Size uly hormat bilen garaşýarys!</p>
 				<div className="contact-closing-ornament" aria-hidden />
 				<p className="contact-closing-text">
-					Siziň gatnaşmagyňyz bilen birlikde,
-					<br />
-					Bu gün aýratyn bir güne öwrüler!
+					Siziň gatnaşmagyňyz bilen, <br />
+					biziň toýumyz has-da aýratyn güne öwrüler!
 				</p>
-				<p className="contact-closing-love">Söýgi bilen</p>
 				<p className="contact-closing-names">
 					{weddingData.groomName} & {weddingData.brideName}
 				</p>

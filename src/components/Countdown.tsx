@@ -70,7 +70,7 @@ export function Countdown() {
 				viewport={{ once: true }}
 				transition={{ duration: 0.6, ease: "easeOut" }}
 			>
-				Toýe çenli
+				Toýa çenli
 			</motion.h2>
 
 			<motion.div

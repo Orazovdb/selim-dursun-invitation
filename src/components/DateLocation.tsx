@@ -14,9 +14,7 @@ export function DateLocation() {
 			>
 				<h2 className="location-title">Ýerleşýän ýeri</h2>
 				<p className="location-desc">
-					Merasimimiz şu ýerde geçiriler
-					<br />
-					«{weddingData.venue}»
+					Toý dabaramyz «Toý mekany uly zalynda geçiriler.
 				</p>
 				{weddingData.mapUrl && (
 					<a
@@ -38,10 +36,7 @@ export function DateLocation() {
 					viewport={{ once: true }}
 					transition={{ duration: 0.8, delay: 0.15, ease: "easeOut" }}
 				>
-					<img
-						src={weddingData.venuePhotoUrl}
-						alt={`${weddingData.venue}`}
-					/>
+					<img src={weddingData.venuePhotoUrl} alt={`${weddingData.venue}`} />
 				</motion.div>
 			)}
 		</section>

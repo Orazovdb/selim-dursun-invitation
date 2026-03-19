@@ -124,8 +124,8 @@ function formatDate(date: Date): string {
 }
 
 function formatEventDate(dateStr: string): string {
-	const [, m, d] = dateStr.split("-").map(Number);
-	return `${String(d).padStart(2, "0")}.${String(m).padStart(2, "0")}`;
+	const [y, m, d] = dateStr.split("-").map(Number);
+	return `${String(d).padStart(2, "0")}.${String(m).padStart(2, "0")}.${y}ý.`;
 }
 
 function isWeddingDay(dateStr: string): boolean {
@@ -151,9 +151,8 @@ export function Schedule() {
 				transition={{ duration: 0.5, ease: "easeOut" }}
 			>
 				<p className="schedule-header-intro">
-					Hormatly garyndaşlar we dostlar!
-					<br />
-					Size Toýa çakylyk edýäris
+					Hormatly myhmanlar! <br />
+					Sizi uly hormat bilen toýymyza çagyrýarys.
 				</p>
 				<p className="schedule-header-date">{formattedDate}</p>
 			</motion.header>
@@ -227,8 +226,8 @@ export function Schedule() {
 							</div>
 							<div className="schedule-card-body">
 								<h3 className="schedule-card-title">{item.title}</h3>
-								{item.description && (
-									<p className="schedule-card-desc">{item.description}</p>
+								{item?.description && (
+									<p className="schedule-card-desc">{item?.description}</p>
 								)}
 							</div>
 						</motion.div>
