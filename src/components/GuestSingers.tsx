@@ -41,7 +41,6 @@ export function GuestSingers() {
 				<h2 id="guest-singers-heading" className="guest-singers-title">
 					{weddingData.guestSingersTitle}
 				</h2>
-				<p className="guest-singers-intro">{weddingData.guestSingersIntro}</p>
 				<ul className="guest-singers-list">
 					{visible.map((s, i) => (
 						<motion.li

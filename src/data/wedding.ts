@@ -21,7 +21,7 @@ export const weddingData = {
 	venue: "Toý mekany uly zal",
 	venueAddress: "Toý mekany uly zal",
 	/** Фото ресторана (URL или путь в public/) */
-	venuePhotoUrl: "/restaurant.jpeg",
+	venuePhotoUrl: "/restaurant.png",
 	/** Ссылка на карту (Google Maps и т.д.) */
 	mapUrl: "https://maps.app.goo.gl/MezDdVvUTMbs6Ddt7",
 	/** Важные даты (отсортированы по дате) */
@@ -42,7 +42,7 @@ export const weddingData = {
 			date: "2026-09-02",
 			time: "18:00",
 			title: "Toý",
-			place: "Toý mekany uly zal"
+			place: "Türkmenbaşy şaýoly, Toý mekany uly zal"
 		}
 	],
 	schedule: [
@@ -108,7 +108,11 @@ export const weddingData = {
 	/** Контакты для связи (имя и номер) */
 	contactList: [
 		{ name: "Selim", phone: "+99362320000" },
-		{ name: "Dursun", phone: "+9965259988" }
+		{ name: "Dursun", phone: "+9965259988" },
+		{ name: "Mähri", phone: "+99364560000" },
+		{ name: "Merdan", phone: "+99363920000" },
+		{ name: "Eneş", phone: "+99365618208" },
+		{ name: "Enejan", phone: "+99361546666" }
 	],
 	photos: [
 		"https://picsum.photos/400/500?random=11",
