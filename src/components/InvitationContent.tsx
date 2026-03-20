@@ -3,6 +3,7 @@ import { weddingData } from "../data/wedding";
 import { Contact } from "./Contact";
 import { Countdown } from "./Countdown";
 import { DateLocation } from "./DateLocation";
+import { GuestSingers } from "./GuestSingers";
 import "./InvitationContent.css";
 import { Schedule } from "./Schedule";
 
@@ -32,6 +33,7 @@ export function InvitationContent() {
 	return (
 		<main className="invitation-content">
 			<Schedule />
+			<GuestSingers />
 			<DateLocation />
 			<Countdown />
 			<Contact />

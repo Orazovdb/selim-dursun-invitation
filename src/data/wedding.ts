@@ -63,7 +63,7 @@ export const weddingData = {
 		},
 		{
 			time: "19:30",
-			title: "Saz we tans bölümi",
+			title: "Ýaşlary garşylamak",
 			description: ""
 		},
 		{
@@ -78,11 +78,11 @@ export const weddingData = {
 		},
 		{
 			time: "21:30",
-			title: "Tort kesmek",
+			title: "Tort kesmek we aýdym saz",
 			description: ""
 		},
 		{
-			time: "22:00",
+			time: "23:00",
 			title: "Toýuň jemlenişi",
 			description: ""
 		}
@@ -98,10 +98,17 @@ export const weddingData = {
 		palette: ["#1a1a1a", "#2c3e50", "#5b2333", "#8a7e6b", "#c4b39a", "#d4c5b0"],
 		note: "Aýdyň reňk gelin üçin saklandy — oňa ýüz tutmaňy haýyş edýäris"
 	},
+	/** Aýdym saz — tüýe gelýän aýdymçylar (adlary wedding.ts-da üýtgediň) */
+	guestSingersTitle: "Toýuň bagşylary",
+	guestSingers: [
+		{ name: "Esasy bagşy Mekan Ataýyew", note: "" },
+		{ name: "Dz-Ed Bk media show", note: "" },
+		{ name: "Lucas", note: "" }
+	],
 	/** Контакты для связи (имя и номер) */
 	contactList: [
 		{ name: "Selim", phone: "+99362320000" },
-		{ name: "Dursun", phone: "+9965259988" },
+		{ name: "Dursun", phone: "+9965259988" }
 	],
 	photos: [
 		"https://picsum.photos/400/500?random=11",
