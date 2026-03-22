@@ -27,7 +27,7 @@ export function DateLocation() {
 			>
 				<h2 className="location-title">Ýerleşýän ýeri</h2>
 				<p className="location-desc">
-					Toý dabaramyz «{weddingData.venue}»da geçiriler.
+					Toý dabaramyz «{weddingData.venue}ynda geçiriler.
 				</p>
 				{weddingData.mapUrl && (
 					<a

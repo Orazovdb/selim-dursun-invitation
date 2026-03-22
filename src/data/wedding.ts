@@ -36,7 +36,7 @@ export const weddingData = {
 			date: "2026-09-01",
 			time: "12:00",
 			title: "Hudaý ýoly",
-			place: "Moskowskiý köçe Sony dom"
+			place: `10 ýyl abadançylyk şaýoly, "Sony" jaýy`
 		},
 		{
 			date: "2026-09-02",
