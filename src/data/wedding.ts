@@ -1,6 +1,6 @@
 /** Путь к аудио в public/. Положите файл "I Think They Call This Love" как i-think-they-call-this-love.mp3 */
 export const weddingData = {
-	musicUrl: "/perfect.mp3",
+	musicUrl: "/lucas.mp3",
 	/** Фото пары на первом экране (при клике открывается приглашение). Путь от корня сайта для совместимости с мессенджерами и PWA. */
 	couplePhotoUrl: "/rh.jpeg",
 	groomName: "Selim",
