@@ -21,13 +21,18 @@ function MusicIcon() {
 	);
 }
 
+type GuestSinger = { name: string; note: string; photoUrl?: string };
+
 export function GuestSingers() {
-	const singers = weddingData.guestSingers as readonly { name: string; note: string }[];
-	const visible = singers.filter((s) => s.name.trim().length > 0);
+	const singers = weddingData.guestSingers as readonly GuestSinger[];
+	const visible = singers.filter(s => s.name.trim().length > 0);
 	if (visible.length === 0) return null;
 
 	return (
-		<section className="guest-singers-section" aria-labelledby="guest-singers-heading">
+		<section
+			className="guest-singers-section"
+			aria-labelledby="guest-singers-heading"
+		>
 			<motion.div
 				className="guest-singers-inner"
 				initial={{ opacity: 0, y: 24 }}
@@ -51,8 +56,21 @@ export function GuestSingers() {
 							viewport={{ once: true }}
 							transition={{ duration: 0.4, delay: i * 0.08 }}
 						>
-							<span className="guest-singers-name">{s.name}</span>
-							{s.note && <span className="guest-singers-note">{s.note}</span>}
+							{s.photoUrl && (
+								<div className="guest-singers-photo-wrap">
+									<img
+										className="guest-singers-photo"
+										src={s.photoUrl}
+										alt={s.name}
+										loading="lazy"
+										decoding="async"
+									/>
+								</div>
+							)}
+							<div className="guest-singers-text">
+								<span className="guest-singers-name">{s.name}</span>
+								{s.note && <span className="guest-singers-note">{s.note}</span>}
+							</div>
 						</motion.li>
 					))}
 				</ul>

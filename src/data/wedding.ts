@@ -40,6 +40,12 @@ export const weddingData = {
 		},
 		{
 			date: "2026-09-02",
+			time: "10:00",
+			title: "Gelinalyjy",
+			place: `"10 ýyl abadançylyk şaýoly, "Sony" jaýy"`
+		},
+		{
+			date: "2026-09-02",
 			time: "18:00",
 			title: "Toý",
 			place: "Türkmenbaşy şaýoly, Toý mekany uly zal"
@@ -101,9 +107,17 @@ export const weddingData = {
 	/** Aýdym saz — tüýe gelýän aýdymçylar (adlary wedding.ts-da üýtgediň) */
 	guestSingersTitle: "Toýuň bagşylary",
 	guestSingers: [
-		{ name: "Esasy bagşy Mekan Ataýyew", note: "" },
-		{ name: "Dz-Ed Bk media show", note: "" },
-		{ name: "Lucas", note: "" }
+		{
+			name: "Esasy bagşy Mekan Ataýyew",
+			note: "",
+			photoUrl: "/singers/singer_1.jpeg"
+		},
+		{ name: "Lucas", note: "", photoUrl: "/singers/singer_2.jpeg" },
+		{
+			name: "Dz-Ed Bk media show",
+			note: "",
+			photoUrl: "/singers/singer_3.jpeg"
+		}
 	],
 	/** Контакты для связи (имя и номер) */
 	contactList: [

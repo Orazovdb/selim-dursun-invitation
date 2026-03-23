@@ -51,14 +51,49 @@
 
 .guest-singers-item {
 	display: flex;
-	flex-direction: column;
-	gap: 0.2rem;
+	flex-direction: row;
+	align-items: center;
+	gap: 1rem;
 	padding: 1rem 1.25rem;
 	background: var(--color-bg-card);
 	border: 1px solid var(--color-border);
 	border-radius: 8px;
-	text-align: center;
+	text-align: left;
 	transition: border-color 0.2s;
+}
+
+.guest-singers-photo-wrap {
+	flex-shrink: 0;
+	width: 4.5rem;
+	height: 5rem;
+	overflow: hidden;
+	border: 2px solid var(--color-border);
+	background: var(--color-bg-soft);
+}
+
+.guest-singers-photo {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+
+.guest-singers-text {
+	display: flex;
+	flex-direction: column;
+	gap: 0.2rem;
+	flex: 1;
+	min-width: 0;
+	text-align: left;
+}
+
+.guest-singers-item:not(:has(.guest-singers-photo-wrap)) {
+	flex-direction: column;
+	text-align: center;
+}
+
+.guest-singers-item:not(:has(.guest-singers-photo-wrap)) .guest-singers-text {
+	text-align: center;
 }
 
 .guest-singers-item:hover {
